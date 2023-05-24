@@ -1,0 +1,42 @@
+
+
+!!!!!!!!!!!!!!!!!!kay na download na man ni nimo. ang sunod nimno buhaton sunda lang ang naas ubos!!!!!!!!!!!
+
+ADTO KA SA FILE EXPLORER DAYON DOWNLOAD E EXTRACT DAYON ANG FOLDER, PAG MA EXTRACT NA 
+E OPEN DAYON. PAG MA OPEN NA NIMO, DAYON MAKAKITA KA OG "LIBRARY OG README FILE" E COPY ANG 
+LIBRARY NGA FOLDER DAYON
+SIGUROHA NGA KANING "LIBRARY" NGA FOLDER MA SAVE NIMO DIDTO SA C:\xampp\htdocs NGA FILE PATH
+
+1. e open  ang cmd e run as administrator
+2. e copy ni tanan comand naas ubos
+cd c:/xampp/mysql/bin/
+mysql -u root -p
+
+Create database library_db;
+use library_db;
+CREATE TABLE books (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    author_FirstName VARCHAR(255) NOT NULL,
+    author_LastName VARCHAR(255) NOT NULL,
+    publisher_FirstName VARCHAR(255) NOT NULL,
+    publisher_LastName VARCHAR(255) NOT NULL,
+    isbn VARCHAR(20) NOT NULL
+);
+DESCRIBE library_db;
+
+
+NOTE: PWEDE RA NA NIMO E COPY GIKAN SA "cd c:/...taman sa last nga 
+comand or "DESCRIBE library_db;" PASTE RA DAYON DIRITSO SA "CMD"
+ 
+4. open nimo ang "localhost/phpmyadmin/" tanawa didto 
+kung naa na ba ang "ims" nga database. kung naa na, 
+balik ka sa vscode dayon ikaw na bahala sa kung unsay gusto nimo ma utro sa interface 
+
+5. kung na sunod na nimo og sakto adto dayon ka sa "localhost/LIBRARY/" para makita nimo ni nga page.
+
+ADDITIONAL: pag nasunod ni nimo tanan siguroha nga sa mga php files e delete ang 
+"//Developed BY: Villaganas, Bimbo, Escodero." nga located sa "line 3" then last e delete pud ni nga file
+
+MAO RA TO GOOD LUCK SA TANAN!
+AIM TO EXCEL!❤
